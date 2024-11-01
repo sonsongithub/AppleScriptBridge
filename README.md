@@ -70,6 +70,4 @@ if let musicApp: MusicApplication = SBApplication(bundleIdentifier: "com.apple.M
 # NSAppleScript
 
 We can also use `NSAppleScript` to execute AppleScript.
-This way requres us to write AppleScript codes and implement some classes or structs to handle the result. Refer to [the example](./blob/main/AppleScriptBridge/AppleScriptManager.swift).
-
-```swift
+This way requres us to write AppleScript codes and implement some classes or structs to handle the result. Refer to [the example](https://github.com/sonsongithub/AppleScriptBridge/blob/main/AppleScriptBridge/AppleScriptManager.swift).
