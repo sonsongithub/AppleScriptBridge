@@ -8,9 +8,6 @@
 import Cocoa
 import ScriptingBridge
 
-
-
-
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
@@ -28,6 +25,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
             if let device = musicApp.AirPlayDevices?().first {
             }
+        }
+        
+        let controller = AppleScriptManager()
+        do {
+            let volume = try controller.getVolume()
+            print(volume)
+        } catch {
+            print(error)
         }
     }
 
